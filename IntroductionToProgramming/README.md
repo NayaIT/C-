@@ -5,10 +5,10 @@ Homework: Introduction to Programming
 
 ### Problem List
 
-1. [Play with Visual Studio](./01. Play with VS)
+1. [Play with Visual Studio]
 1. [Blank Solution](./02. Blank Solution)
 1. [Play with MSDN Library](./03. Play with MSDN)
-1. [Hello World](Hello World)
+1. [Hello World]()
 1. [Print Name](Print Name)
 1. [Print Numbers](./06. Print Numbers)
 1. [Print First and Last Name](./07. First and Last Name)
