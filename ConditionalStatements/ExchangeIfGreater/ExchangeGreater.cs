@@ -11,6 +11,31 @@ namespace ExchangeIfGreater
     {
         static void Main()
         {
+            double numberA = double.Parse(Console.ReadLine());
+            double numberB = double.Parse(Console.ReadLine());
+            double tempNum;
+
+            //bool greaterAB =(a > b); 
+
+            if (numberA > numberB)
+            {
+                tempNum = numberA;
+                numberA = numberB;
+                numberB = tempNum;
+
+                Console.WriteLine("{0} {1}", numberA, numberB);
+            }
+            else
+            {
+                Console.WriteLine("{0} {1}", numberA, numberB);
+            }
         }
     }
 }
+
+/*
+Temp variable:
+t = y;
+y = x;
+x = t;
+*/
