@@ -10,16 +10,16 @@ namespace N_thBit
     {
         static void Main()
         {
-            uint number = uint.Parse(Console.ReadLine());
-            int position = int.Parse(Console.ReadLine());
+            ulong number = ulong.Parse(Console.ReadLine());
+            byte position = byte.Parse(Console.ReadLine());
 
-            uint mask = 1;
+            double positionPow = (ulong)Math.Pow(2, 55);
 
-            var valueOfNBit = ((mask << position & number) == 0) ? "0" : "1";
-
-            //int valueOfNBit = (number >> position) & 1;
-
-            Console.WriteLine(valueOfNBit);
+            if ((position < 55) && (number <= positionPow))
+            {
+                ulong result = (number >> position) & 1;
+                Console.WriteLine(result == 0 ? "0" : "1");
+            }
         }
     }
 }
