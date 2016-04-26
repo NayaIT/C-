@@ -1,7 +1,16 @@
 ﻿/*09. Matrix of Numbers
 Write a program that reads from the console a positive integer number N and prints a matrix like in the examples below. Use two nested loops.
-
 Challenge: achieve the same effect without nested loops
+
+Input
+The input will always consist of a single line, which contains the number N
+
+Output
+See the examples.
+
+Constraints
+1 <= N <= 20
+N will always be a valid integer number
  */
 
 namespace MatrixOfNumbers
@@ -13,17 +22,20 @@ namespace MatrixOfNumbers
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
+            //int [,] currentNum = new int [n, n];
 
-            for (int i = 0; i < n; i++)
+            for (int row = 1; row <= n; row++)
             {
-                Console.Write("{0} ", i);
-
-                for (int j = 0; j < n; j++)
+               
+                for (int col = row; col < row + n; col++)
                 {
-                    Console.WriteLine(j);
+                    
+                    Console.Write("{0} ", col);
                 }
-                
+
+                Console.WriteLine();
             }
+
         }
     }
 }

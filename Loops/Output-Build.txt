@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: Trailing0InN!, Configuration: Debug Any CPU ------
+1>  Trailing0InN! -> E:\Telerik Academy\GitHub\CSharp-part-1\Loops\Trailing0InN!\bin\Debug\Trailing0InN!.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

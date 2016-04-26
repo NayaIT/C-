@@ -29,11 +29,30 @@ namespace MMSAOfNNumbers
         {
             int n = int.Parse(Console.ReadLine());
 
+            double number;
+            double sum = 0;
+            double average;
+
+            //or with List
+            //var list = new List<double>();
+            var arr = new double[n];
+
             for (int i = 0; i < n; i++)
             {
-                double numbers = double.Parse(Console.ReadLine());
+                number = double.Parse(Console.ReadLine());
+                //list.Add(number);
+
+                arr[i] = number;
+
+                sum += number;
             }
 
+            average = sum / n;
+            //list.Sort();
+
+            Array.Sort(arr);
+
+            Console.WriteLine("min={0:F2} \nmax={1:F2} \nsum={2:F2} \navg={3:F2}", arr[0], arr[n - 1], sum, average); // list[0], list[n - 1], sum, average);
         }
     }
 }

@@ -6,11 +6,43 @@ Try to use only two loops.
 namespace Calculate3_
 {
     using System;
+    using System.Numerics;
 
     class Calculate3
     {
         static void Main()
         {
+
+            int N = int.Parse(Console.ReadLine());
+            int K = int.Parse(Console.ReadLine());
+
+            int NK = N - K;
+
+            BigInteger factorielN = 1;
+            BigInteger factorielK = 1;
+            BigInteger factorielNK = NK;
+            BigInteger result = 1;
+
+            //N! / (K! * (N - K)!)
+
+            for (int i = 1, j = 1; i <= N; i++, j++)
+            {
+                factorielN *= i;
+
+                if (j <= K)
+                {
+                    factorielK *= j;
+                }
+            }
+
+            for (int k = 1; k < NK; k++)
+            {
+                factorielNK *= k;
+            }
+
+            result = factorielN / (factorielK * factorielNK);
+
+            Console.WriteLine(result);
         }
     }
 }
